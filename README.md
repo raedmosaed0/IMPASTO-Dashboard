@@ -1,13 +1,13 @@
- <p align="center">
+<p align="center">
   <img src="./Logo.png" width="40%" alt="Impasto Logo">
 </p>
 
 <h1 align="center">IMPASTO — Admin Dashboard</h1>
 
 <p align="center">
-  <strong>Restaurant Management. Simplified.</strong>
+  <strong>Gestione del Ristorante. Semplificata.</strong>
   <br>
-  A centralized dashboard concept for managing restaurant operations, monitoring orders, organizing the menu, and handling table reservations through a clean and intuitive interface.
+  Una dashboard centralizzata per gestire le operazioni del ristorante, monitorare gli ordini, organizzare il menu e gestire le prenotazioni dei tavoli attraverso un'interfaccia intuitiva e dal design moderno.
 </p>
 
 ---
@@ -18,7 +18,7 @@
 
 Built around the visual identity of Impasto, the dashboard combines a warm Italian-inspired aesthetic with practical management tools. From monitoring sales activity and processing customer orders to maintaining menu items and managing table reservations, the interface brings key restaurant operations together in one place.
 
-The dashboard includes an overview of restaurant activity, order status management, menu customization, reservation tracking, and restaurant settings. Its responsive interface adapts to supported screen sizes, providing an organized experience across desktop computers and tablets.
+The dashboard includes an overview of restaurant activity, order status management, menu customization, reservation tracking, and restaurant settings. Its interface is designed for supported desktop and tablet screen sizes.
 
 More than a simple administrative interface, Impasto Admin represents a management-focused extension of the Impasto restaurant website concept.
 
@@ -47,15 +47,6 @@ More than a simple administrative interface, Impasto Admin represents a manageme
 - **Google Fonts**
 - **Responsive Web Design**
 
-## 🔐 Demo Access
-
-Use the following credentials to explore the demonstration dashboard:
-
-- **Username:** `admin`
-- **Password:** `impasto123`
-
-These are demonstration credentials defined in the client-side application. This implementation does not provide production-grade authentication or server-side access control.
-
 ## 💾 Data Storage
 
 The dashboard uses the browser's **Local Storage API** to persist menu items, orders, reservations, and restaurant settings.
@@ -81,11 +72,20 @@ The current implementation uses client-side authentication and browser storage. 
   <img src="./Preview.png" alt="Impasto Admin Dashboard Preview" width="100%">
 </p>
 
-## 🌐 Live Website
+## 🔐 Demo Access
 
-Explore the main Impasto restaurant website:
+Use the following credentials to explore the demonstration dashboard:
 
-[![Restaurant Website](https://img.shields.io/badge/Restaurant%20Website-Visit%20Impasto-F05A28?style=for-the-badge&labelColor=0A0F0A)](https://impasto-beta.vercel.app/)
+- **Username:** `admin`
+- **Password:** `impasto123`
+
+These are demonstration credentials defined in the client-side application. This implementation does not provide production-grade authentication or server-side access control.
+
+## 🌐 Live Demo
+
+Explore the live Impasto Admin Dashboard:
+
+[![Live Website](https://img.shields.io/badge/Live%20Website-Visit%20Dashboard-F05A28?style=for-the-badge&labelColor=0A0F0A)](https://impasto-admin-dashboard.vercel.app/)
 
 ## </> Developer
 
@@ -93,8 +93,5 @@ Explore the main Impasto restaurant website:
 
 ---
 
-<p align="center">
   © 2026 IMPASTO. All rights reserved.
-  <br>
-  <em>Made fresh, every day.</em>
-</p>
+  
