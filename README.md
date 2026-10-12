@@ -14,28 +14,24 @@
 
 ## 🧡 About The Project
 
-**IMPASTO Admin Dashboard** is a restaurant management interface designed to provide a centralized workspace for handling essential restaurant operations.
+**IMPASTO Admin Dashboard** is a modern restaurant management interface designed to simplify daily operations through a clean, Italian-inspired design.
 
-Built around the visual identity of Impasto, the dashboard combines a warm Italian-inspired aesthetic with practical management tools. From monitoring sales activity and processing customer orders to maintaining menu items and managing table reservations, the interface brings key restaurant operations together in one place.
-
-The dashboard includes an overview of restaurant activity, order status management, menu customization, reservation tracking, and restaurant settings. Its interface is designed for supported desktop and tablet screen sizes.
-
-More than a simple administrative interface, Impasto Admin represents a management-focused extension of the Impasto restaurant website concept.
+It brings essential tools for managing orders, menu items, table reservations, restaurant settings, and sales analytics into one centralized dashboard.
 
 ## 🌶 Features
 
-- 📊 **Dashboard Overview** — Monitor order activity, revenue, average order value, daily performance, and popular menu items.
-- 🛍️ **Order Management** — Review customer orders, search and filter records, inspect order details, and update order statuses.
-- 🍕 **Menu Management** — Add, edit, search, filter, and remove menu items while managing categories, descriptions, prices, images, badges, and availability.
-- 📅 **Reservation Management** — Review table reservations, search booking records, and manage reservation statuses, guest counts, contact details, and special requests.
-- ⚙️ **Restaurant Settings** — Manage restaurant information, contact details, address, opening hours, social links, and order acceptance settings.
-- 📈 **Sales Analytics** — Visualize daily revenue and review performance over selectable date ranges.
-- 🔎 **Search & Filtering** — Quickly find relevant menu items, orders, and reservations.
-- 🔐 **Admin Login** — Access the dashboard through a dedicated sign-in interface.
-- 💾 **Local Data Persistence** — Save dashboard changes in the browser using Local Storage.
-- 📱 **Responsive Interface** — Adapt the dashboard layout to supported desktop and tablet screen sizes.
-- 🎨 **Consistent Visual Identity** — Maintain the Impasto brand aesthetic with warm colors, rounded components, and custom typography.
-- 🖥️ **Website Integration** — Access the main restaurant website directly from the administration interface.
+- 📊 **Dashboard Overview** — Track revenue, orders, and restaurant performance.
+- 🛍️ **Order Management** — View orders and update their statuses.
+- 🍕 **Menu Management** — Manage menu items, categories, prices, and availability.
+- 📅 **Reservation Management** — Review bookings and manage reservations.
+- ⚙️ **Restaurant Settings** — Customize restaurant information and opening hours.
+- 📈 **Sales Analytics** — Review revenue and sales performance.
+- 🔎 **Search & Filtering** — Find orders, menu items, and reservations quickly.
+- 🔐 **Admin Login** — Dedicated dashboard sign-in interface.
+- 💾 **Local Storage** — Save changes directly in the browser.
+- 📱 **Responsive Design** — Adapted for supported desktop and tablet screens.
+- 🎨 **Modern UI/UX** — Warm colors, clean layouts, and consistent branding.
+- 🖥️ **Website Integration** — Direct access to the main Impasto website.
 
 ## ⚙️ Tech Stack
 
@@ -81,11 +77,11 @@ Use the following credentials to explore the demonstration dashboard:
 
 These are demonstration credentials defined in the client-side application. This implementation does not provide production-grade authentication or server-side access control.
 
-## 🌐 Live Demo
+## 🌐 Live Websites
 
-Explore the live Impasto Admin Dashboard:
+[![Admin Dashboard](https://img.shields.io/badge/Admin%20Dashboard-Visit%20Dashboard-F05A28?style=for-the-badge&labelColor=0A0F0A)](https://impasto-admin-dashboard.vercel.app/)
 
-[![Live Website](https://img.shields.io/badge/Live%20Website-Visit%20Dashboard-F05A28?style=for-the-badge&labelColor=0A0F0A)](https://impasto-admin-dashboard.vercel.app/)
+[![Main Website](https://img.shields.io/badge/Main%20Website-Visit%20Website-F05A28?style=for-the-badge&labelColor=0A0F0A)](https://impasto-beta.vercel.app/)
 
 ## </> Developer
 
