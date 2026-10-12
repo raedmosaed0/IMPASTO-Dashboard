@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#fffcf7" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>IMPASTO — Admin</title>
+  <link rel="icon" type="image/png" href="Logo2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lilita+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M7 20v-7M12 20V5M17 20v-10"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M9 8h6M9 12h6M9 16h4"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9a2.1 2.1 0 0 0-3-3L5 17v3z"/><path d="m14.5 7.5 3 3"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6"/><path d="m6 7 1 13h10l1-13M9 7V4h6v3"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></symbol>
+      <symbol id="i-logout" viewBox="0 0 24 24"><path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"/><path d="m15 8 4 4-4 4M19 12H9"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-dollar" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M16.5 7.5C16 6 14.3 5 12 5c-2.500 0-4 1.200-4 3s1.500 2.500 4 3 4 1.200 4 3-1.500 3-4 3c-2.400 0-4.200-1-4.700-2.700"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.200l3.200 1.800"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8.500" r="3.500"/><path d="M2.500 20a6.500 6.500 0 0 1 13 0"/><path d="M16 5.200a3.500 3.500 0 0 1 0 6.600M18 14.200a6.500 6.500 0 0 1 3.500 5.800"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.600a11 11 0 0 0 4.900 4.900L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- Shown on phones only -->
+  <div class="desktop-only" role="alert">
+    <img src="Logo.png" alt="IMPASTO" onerror="this.style.display='none'" />
+    <h1>Not available on phones</h1>
+    <p>The admin dashboard works on computers and tablets only. Please open it on a larger screen.</p>
+  </div>
+
+  <!-- ================= Login ================= -->
+  <section class="login" id="login" hidden>
+    <div class="login__inner">
+      <div>
+        <img class="login__logo" src="Logo.png" alt="IMPASTO" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <span class="brand-text">IMPASTO</span>
+        <h1 class="login__title">Welcome back, <em>Chef.</em></h1>
+        <p class="login__text">Manage the menu, follow today’s orders and keep every table booked. Everything for the kitchen, in one place.</p>
+      </div>
+      <div class="login__card-wrap">
+        <form class="login__card" id="login-form" autocomplete="on">
+          <h2>Sign in</h2>
+          <label class="field"><span>Username</span><input class="input" name="user" autocomplete="username" required /></label>
+          <label class="field"><span>Password</span><input class="input" name="pass" type="password" autocomplete="current-password" required /></label>
+          <p class="login__error" id="login-error" role="alert"></p>
+          <button class="button" type="submit">Sign in</button>
+          <p class="login__hint">Demo access: <code>admin</code> / <code>impasto123</code></p>
+        </form>
+      </div>
+    </div>
+    <p class="login__dev footer__dev">Developed by <a href="https://github.com/raedmosaed0" target="_blank" rel="noopener noreferrer">Raed Mosaed</a></p>
+  </section>
+
+  <!-- ================= App ================= -->
+  <div class="app" id="app" hidden>
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="sidebar__brand">
+        <img class="sidebar__logo" src="Logo.png" alt="IMPASTO" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <span class="brand-text">IMPASTO</span>
+
+      </div>
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="#overview" data-page="overview"><svg class="ico"><use href="#i-chart"/></svg>Overview</a>
+        <a class="nav__link" href="#orders" data-page="orders"><svg class="ico"><use href="#i-bag"/></svg>Orders<span class="nav__badge" data-badge="orders" hidden></span></a>
+        <a class="nav__link" href="#menu" data-page="menu"><svg class="ico"><use href="#i-menu"/></svg>Menu</a>
+        <a class="nav__link" href="#reservations" data-page="reservations"><svg class="ico"><use href="#i-calendar"/></svg>Reservations<span class="nav__badge" data-badge="reservations" hidden></span></a>
+        <a class="nav__link" href="#settings" data-page="settings"><svg class="ico"><use href="#i-settings"/></svg>Settings</a>
+      </nav>
+      <div class="sidebar__foot">
+        <a class="nav__link" href="index.html" target="_blank" rel="noopener"><svg class="ico"><use href="#i-external"/></svg>View website</a>
+        <button class="nav__link" type="button" data-act="logout" style="background:none;border:0;text-align:left;width:100%"><svg class="ico"><use href="#i-logout"/></svg>Sign out</button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div>
+          <h1 class="topbar__title" id="page-title">Overview</h1>
+          <p class="topbar__date" id="page-date"></p>
+        </div>
+        <div class="topbar__right">
+          <label class="switch topbar__open" title="Accept new orders">
+            <input type="checkbox" id="accepting" />
+            <span class="switch__track"></span>
+            <span class="switch__label" id="accepting-label">Accepting orders</span>
+          </label>
+          <a class="button button--ghost button--sm" href="index.html" target="_blank" rel="noopener"><svg class="ico"><use href="#i-external"/></svg><span class="topbar__site-label">View site</span></a>
+          <span class="avatar" aria-hidden="true">IM</span>
+        </div>
+      </header>
+      <main class="view" id="view"></main>
+      <footer class="footer">
+        <div class="footer__inner">
+          <span>© 2026 IMPASTO. All rights reserved.</span>
+          <span class="footer__dev">Developed by <a href="https://github.com/raedmosaed0" target="_blank" rel="noopener noreferrer">Raed Mosaed</a></span>
+          <span class="footer__tagline">Made fresh, every day.</span>
+        </div>
+      </footer>
+    </div>
+
+    <nav class="tabbar" id="tabbar" aria-label="Tab bar">
+      <a class="tabbar__item" href="#overview" data-page="overview"><svg class="ico"><use href="#i-chart"/></svg><span>Overview</span></a>
+      <a class="tabbar__item" href="#orders" data-page="orders"><svg class="ico"><use href="#i-bag"/></svg><span>Orders</span><b class="tabbar__dot" data-badge="orders" hidden></b></a>
+      <a class="tabbar__item" href="#menu" data-page="menu"><svg class="ico"><use href="#i-menu"/></svg><span>Menu</span></a>
+      <a class="tabbar__item" href="#reservations" data-page="reservations"><svg class="ico"><use href="#i-calendar"/></svg><span>Bookings</span><b class="tabbar__dot" data-badge="reservations" hidden></b></a>
+      <a class="tabbar__item" href="#settings" data-page="settings"><svg class="ico"><use href="#i-settings"/></svg><span>Settings</span></a>
+    </nav>
+  </div>
+
+  <div id="modal-root"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
